@@ -6,7 +6,11 @@
 @import 'include-media';
 
 // screen sizes for include-media
-$breakpoints: (small: 600px, medium: 800px, large: 1024px);
+$breakpoints: (
+  small: 600px,
+  medium: 800px,
+  large: 1024px
+);
 
 // colors
 $blue: #569bb4;
@@ -122,7 +126,6 @@ body.contact .nav-contact {
 }
 
 .content-wrapper {
-
   h1,
   h2,
   h3,
@@ -198,12 +201,16 @@ body {
     a {
       color: $light-text;
       font-weight: bold;
+      display: block;
     }
   }
 }
 
-.address p {
-  margin: 0.25rem 0;
+.address {
+  p,
+  a {
+    margin: 0.25rem 0;
+  }
 }
 
 .divider {
@@ -245,7 +252,13 @@ a:hover {
   }
 }
 
-@include media("width>=large") {
+@include media('width>=small') {
+  .footer-info {
+    margin-right: 6rem;
+  }
+}
+
+@include media('width>=large') {
   .form-wrapper {
     margin-right: 2rem;
     max-width: 100% !important;
@@ -282,21 +295,20 @@ a:hover {
   padding: 1.23rem 2rem;
 }
 
-@include media("width>=medium") {
+@include media('width>=medium') {
   .first .medForm {
     padding: 1.875rem 2rem;
   }
 }
 
-@include media("width>=small") {
-
+@include media('width>=small') {
   .burger,
   .mobile {
     display: none;
   }
 }
 
-@include media("width<=medium") {
+@include media('width<=medium') {
   .content-wrapper {
     flex-direction: column;
 
@@ -309,7 +321,7 @@ a:hover {
   }
 }
 
-@include media("width<=large") {
+@include media('width<=large') {
   .form-wrapper {
     flex-direction: column;
 
@@ -320,7 +332,7 @@ a:hover {
 }
 
 .copyright {
-  max-width: 250px;
+  max-width: 400px;
 }
 
 .paypal input[type='image'] {
@@ -340,7 +352,7 @@ a:hover {
   background: $blue;
 }
 
-@include media("width<=small") {
+@include media('width<=small') {
   .mobile {
     display: inline-block;
     text-align: center;
