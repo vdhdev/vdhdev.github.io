@@ -15,16 +15,17 @@
   "author": "Tyler Lawson",
   "license": "MIT",
   "dependencies": {
-    "browser-sync": "^2.26.14",
+    "browser-sync": "^2.27.7",
     "eclint": "^2.8.1",
     "gulp": "^4.0.2",
-    "gulp-autoprefixer": "^7.0.1",
+    "gulp-autoprefixer": "^8.0.0",
     "gulp-nunjucks-render": "^2.2.3",
     "gulp-reporter": "^2.10.0",
-    "gulp-sass": "^4.1.0"
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.47.0"
   },
   "devDependencies": {
-    "prettier": "^2.2.1"
+    "prettier": "^2.5.1"
   },
   "resolutions": {
     "mem": ">=4.0.0",
