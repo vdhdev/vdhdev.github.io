@@ -9,9 +9,7 @@ jobs:
     steps:
       - name: checkout repo
         uses: actions/checkout@v2
-        with:
-          persist-credentials: false
-
+        
       - name: yarn install
         uses: borales/actions-yarn@v2.3.0
         with:
