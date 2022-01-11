@@ -230,9 +230,7 @@
   <p>Accord, MA 02018</p>
   <p>Tel: (781) 267-7627</p>
   <p>Fax: (617) 391-2881</p>
-  <a href="mailto:emmalawson@visitingdentalhygiene.com"
-    >EmmaLawson@VisitingDentalHygiene.com</a
-  >
+  <a href="mailto:emma@vdhinc.org">Emma@VDHInc.org</a>
 </div>
 
  <div class="sidebar">
@@ -275,12 +273,18 @@
       <p>P.O. Box 548</p>
       <p>Accord, MA 02018</p>
       <a class="Phone" href="tel:17812677627">(781) 267-7627</a>
+      <a class="Email" href="mailto:emma@vdhinc.org">emma@vdhinc.org</a>
     </div>
     <p class="copyright">
-      Copyright © 2019 VDH Inc. All Rights Reserved.
+      Copyright © <span id="year"></span> VDH Inc. All Rights Reserved.
     </p>
   </div>
 </div>
+
+<script>
+  const yearTag = document.getElementById('year');
+  yearTag.textContent = new Date().getFullYear();
+</script>
 
   </body>
 </html>

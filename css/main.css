@@ -575,9 +575,11 @@ body {
 .footer .footer-info a {
   color: #444444;
   font-weight: bold;
+  display: block;
 }
 
-.address p {
+.address p,
+.address a {
   margin: 0.25rem 0;
 }
 
@@ -614,6 +616,11 @@ a:hover {
     display: flex;
     justify-content: space-between;
     max-width: 70%;
+  }
+}
+@media (min-width: 600px) {
+  .footer-info {
+    margin-right: 6rem;
   }
 }
 @media (min-width: 1024px) {
@@ -679,7 +686,7 @@ a:hover {
   }
 }
 .copyright {
-  max-width: 250px;
+  max-width: 400px;
 }
 
 .paypal input[type=image] {
