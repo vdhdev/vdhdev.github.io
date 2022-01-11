@@ -1,0 +1,31 @@
+<header class="header">
+  <!-- Mobile nav -->
+  <div class="burger" onclick="burgerClick(this)">
+    <div class="container">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+    </div>
+    {% include "partials/nav.html" %}
+  </div>
+
+  <!-- Normal nav -->
+  {% include "partials/nav.html" %}
+
+  <div class="site-branding desktop">
+    <a href="/" title="Visiting Dental Hygiene, Inc." class="site-intro">
+      {% include "partials/logo.html" %}
+      <h1 class="site-title desktop">Visiting Dental Hygiene, Inc.</h1>
+      <h2 class="site-description">
+        Mobile Dental Hygiene Care (Nonprofit – 501(c)(3))
+      </h2>
+    </a>
+  </div>
+  <div class="site-branding mobile">
+    {% include "partials/logo.html" %}
+    <h1 class="site-title">VDH, Inc.</h1>
+    <h2 class="site-description">
+      Mobile Dental Hygiene Care (Nonprofit – 501(c)(3))
+    </h2>
+  </div>
+</header>

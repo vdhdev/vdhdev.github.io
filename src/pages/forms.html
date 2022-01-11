@@ -1,0 +1,39 @@
+{% set body_class = "forms" %} {% set title = "VDH - Forms" %} {% extends
+"default.html" %} {% block content %}
+
+<div class="content-area">
+  <h1>Forms</h1>
+  <div class="form-wrapper">
+    <div class="first wrap">
+      <a
+        href="/img/forms/Adult-Medical-Form.pdf"
+        class="medForm One"
+        download=""
+        >Adult Medical Form</a
+      >
+      <a
+        href="/img/forms/Children-Medical-Form.pdf"
+        class="medForm Two"
+        download=""
+        >Children Medical Form</a
+      >
+    </div>
+    <div class="second wrap">
+      <a
+        href="/img/forms/Adult-medical-and-consent-form-Spanish.pdf"
+        class="medForm Three"
+        download=""
+        >Formulario Médico Para Los Niños</a
+      >
+      <a
+        href="/img/forms/Chilren-Medical-History-Form-Spanish.pdf"
+        class="medForm Four"
+        download=""
+        >Formulario Médico Para Los Adultos</a
+      >
+    </div>
+  </div>
+  <img src="/img/teeth-clean-kid.jpg" />
+</div>
+
+{% endblock %}

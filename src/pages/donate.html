@@ -1,0 +1,101 @@
+{% set body_class = "donate" %} {% set title = "VDH - Donate" %} {% extends
+"default.html" %} {% block content %}
+
+<div class="content-area">
+  <h1>Donate</h1>
+  <h3>How to donate to Visiting Dental Hygiene, Inc</h3>
+  <p>
+    Please make your check payable to "<b>Visiting Dental Hygiene, Inc.</b>" and
+    mail it to the address below.
+  </p>
+  <p>
+    Call <a src="tel:7812677627">781-267-7627</a> for pick up or send donated
+    supplies to:
+  </p>
+  <b class="address">
+    <p>Visiting Dental Hygiene, Inc.</p>
+    <p>P.O. Box 548</p>
+    <p>Accord, MA 02018</p>
+  </b>
+  <p>Cash donations are also accepted.</p>
+  <p><b>Thank you for your generous support!</b></p>
+  <h6>
+    PLEASE HELP VISITING DENTAL HYGIENE, INC CONTINUE TO BE ABLE TO BRING THESE
+    SERVICES TO THOSE WITH LIMITED ACCESS TO DENTAL HYGIENE CARE.
+  </h6>
+
+  <div class="paypal">
+    <form
+      action="https://www.paypal.com/cgi-bin/webscr"
+      method="post"
+      target="_top"
+    >
+      <input type="hidden" name="cmd" value="_s-xclick" />
+      <input type="hidden" name="hosted_button_id" value="X37LTE3U78YLC" />
+      <input
+        type="image"
+        src="/img/donate2.png"
+        border="0"
+        name="submit"
+        title="PayPal - The safer, easier way to pay online!"
+        alt="Donate with PayPal button"
+      />
+    </form>
+  </div>
+
+  <p>
+    <strong
+      >Here’s a current list of needed supplies you may donate to us:</strong
+    >
+  </p>
+  <ul>
+    <li>gloves</li>
+    <li>masks</li>
+    <li>toothbrushes</li>
+    <li>manual toothbrushes</li>
+    <li>spinbrushes</li>
+    <li>floss</li>
+    <li>floss picks</li>
+    <li>toothpaste</li>
+    <li>dental hygiene instruments</li>
+    <li>prophy paste</li>
+    <li>gallon distilled water</li>
+    <li>paper towel</li>
+    <li>disinfectant wipes</li>
+  </ul>
+  <p>
+    You can help a patient live a longer, healthier life. Since Visiting Dental
+    Hygiene, Inc. launched in 2013, we have seen many uninsured patients,
+    thereby providing free dental care to under-served patients in Southeast,
+    Northeast, Central and parts of Western regions of Massachusetts.
+  </p>
+  <p><strong>But there are still patients we’re not able to reach…</strong></p>
+  <p>
+    All donations are tax-deductible to the extent allowed by law. For more
+    information on donating to Visiting Dental Hygiene, Inc, feel free to email:
+    <a src="mailto:emmalawson@visitingdentalhygiene.com"
+      >emmalawson@visitingdentalhygiene.com</a
+    >
+    or call us at <a src="tel:7812677627">781-267-7627</a>.
+  </p>
+  <p>
+    <i>We are a federally-recognized 501(c) (3) tax-exempt organization.</i>
+  </p>
+  <h5>
+    If you are unable to pay for dental care, please call us to discuss your
+    situation so we can help you! We care about your health!
+  </h5>
+
+  <p>
+    Our mobile dental hygiene services are funded in part by a grant from the
+    Blue Cross Blue Shield of Massachusetts Foundation. Created in 2001, the
+    mission of the Blue Cross Blue Shield Massachusetts Foundation is to expand
+    access to health care in Massachusetts through grantmaking and policy
+    initiatives.
+    <a href="https://www.bluecrossmafoundation.org" target="_blank"
+      >www.bluecrossmafoundation.org</a
+    >
+  </p>
+</div>
+
+{% endblock %}

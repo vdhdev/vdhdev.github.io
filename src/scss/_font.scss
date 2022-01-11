@@ -1,0 +1,85 @@
+@font-face {
+  font-family: 'Open Sans';
+  src: url(/fonts/OpenSans-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Open Sans Italic';
+  src: url(/fonts/OpenSans-RegularItalic.ttf);
+}
+
+@font-face {
+  font-family: 'Open Sans SemiBold';
+  src: url(/fonts/OpenSans-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: 'Open Sans SemiBold Italic';
+  src: url(/fonts/OpenSans-SemiBoldItalic.ttf);
+}
+
+@font-face {
+  font-family: 'Open Sans Bold';
+  src: url(/fonts/OpenSans-Bold.ttf);
+}
+
+@font-face {
+  font-family: 'Open Sans Bold Italic';
+  src: url(/fonts/OpenSans-BoldItalic.ttf);
+}
+
+@font-face {
+  font-family: 'Open Sans ExtraBold';
+  src: url(/fonts/OpenSans-ExtraBold.ttf);
+}
+
+@font-face {
+  font-family: 'Open Sans ExtraBold Italic';
+  src: url(/fonts/OpenSans-BoldItalic.ttf);
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  color: #181818;
+  background: #f2f4f4;
+}
+
+b,
+strong {
+  font-weight: 400;
+  font-family: 'Open Sans Bold', sans-serif;
+}
+
+i,
+em,
+blockquote {
+  font-weight: 400;
+  font-style: normal;
+  font-family: 'Open Sans Italic';
+}
+
+p {
+  line-height: 1.5;
+  margin: 30px 0;
+}
+
+a {
+  text-decoration: none;
+  font-family: 'Open Sans SemiBold', sans-serif;
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 42px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Open Sans Bold', sans-serif;
+  font-weight: normal;
+}

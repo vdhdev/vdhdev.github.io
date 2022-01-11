@@ -1,0 +1,33 @@
+{
+  "name": "vdh-site",
+  "version": "1.1.0",
+  "description": "VDH inc. website",
+  "scripts": {
+    "start": "gulp",
+    "build": "gulp build-to-deploy",
+    "pretty": "prettier 'src/**/*.(?:css|scss|js|html)'",
+    "pretty:fix": "prettier --write 'src/**/*.(?:css|scss|js|html)'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/visitingdentalhygiene/VDHAWebsite"
+  },
+  "author": "Tyler Lawson",
+  "license": "MIT",
+  "dependencies": {
+    "browser-sync": "^2.26.14",
+    "eclint": "^2.8.1",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-nunjucks-render": "^2.2.3",
+    "gulp-reporter": "^2.10.0",
+    "gulp-sass": "^4.1.0"
+  },
+  "devDependencies": {
+    "prettier": "^2.2.1"
+  },
+  "resolutions": {
+    "mem": ">=4.0.0",
+    "yargs-parser": ">=13.1.2"
+  }
+}
