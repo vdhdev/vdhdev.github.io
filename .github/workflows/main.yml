@@ -21,20 +21,7 @@ jobs:
           cmd: build
 
       - name: Deploy 🚀
-        uses: EndBug/add-and-commit@v7 # You can change this to use a specific version.
+        uses: JamesIves/github-pages-deploy-action@v4.2.2
         with:
-          # The arguments for the `git add` command (see the paragraph below for more info)
-          # Default: '.'
-          add: 'dist --force'
-
-          # The name of the user that will be displayed as the author of the commit.
-          # Default: depends on the default_author input
-          author_name: Emma Lawson
-
-          # The email of the user that will be displayed as the author of the commit.
-          # Default: depends on the default_author input
-          author_email: emma@vdhinc.org
-
-          # The message for the commit.
-          # Default: 'Commit from GitHub Actions (name of the workflow)'
-          message: 'Commit from GitHub Actions Deploy'
+          branch: gh-pages # The branch the action should deploy to.
+          folder: dist # The folder the action should deploy.
