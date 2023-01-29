@@ -469,27 +469,29 @@ body.contact .nav-contact a:before {
 }
 
 .site-branding {
-  display: inline-block;
   width: 100%;
   background-color: #569bb4;
-}
-.site-branding a {
   display: flex;
   justify-content: center;
-  padding: 5rem;
-  flex-direction: column;
 }
-.site-branding.desktop svg.logo {
-  transition: all ease-in-out 0.5s;
-}
-.site-branding.desktop svg.logo:hover {
-  transform: translateY(-1em);
+.site-branding a {
+  max-width: 900px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 2rem;
 }
 .site-branding svg.logo {
   fill: #f8f8f9;
-  width: 150px;
-  height: 150px;
+  width: 100px;
+  height: 100px;
   margin: 0 auto;
+  margin-right: 2rem;
+}
+.site-branding .site-header-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .site-branding h1.site-title {
   margin: 0;
@@ -498,7 +500,6 @@ body.contact .nav-contact a:before {
   letter-spacing: -2px;
   color: #f8f8f9;
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
-  text-align: center;
 }
 .site-branding h2.site-description {
   color: #f8f8f9;
@@ -508,7 +509,6 @@ body.contact .nav-contact a:before {
   letter-spacing: 4px;
   opacity: 0.75;
   margin-top: 0.75rem;
-  text-align: center;
 }
 
 .content-wrapper {
@@ -539,6 +539,9 @@ body.contact .nav-contact a:before {
 .content-wrapper .content-area img {
   width: 100%;
   border-radius: 0.5rem;
+}
+.content-wrapper .content-area:first-child {
+  margin-top: 0;
 }
 .content-wrapper .sidebar {
   padding: 2rem 0;
@@ -575,11 +578,9 @@ body {
 .footer .footer-info a {
   color: #444444;
   font-weight: bold;
-  display: block;
 }
 
-.address p,
-.address a {
+.address p {
   margin: 0.25rem 0;
 }
 
@@ -616,11 +617,6 @@ a:hover {
     display: flex;
     justify-content: space-between;
     max-width: 70%;
-  }
-}
-@media (min-width: 600px) {
-  .footer-info {
-    margin-right: 6rem;
   }
 }
 @media (min-width: 1024px) {
@@ -686,7 +682,7 @@ a:hover {
   }
 }
 .copyright {
-  max-width: 400px;
+  max-width: 250px;
 }
 
 .paypal input[type=image] {
@@ -801,4 +797,8 @@ body.donate .nav-donate a,
 body.contact .nav-contact a {
     color: #315678 !important;
   }
+}
+.some-statement {
+  margin-top: 0.5rem;
+  opacity: 0.5;
 }
