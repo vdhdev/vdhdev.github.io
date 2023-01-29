@@ -77,30 +77,31 @@ body.contact .nav-contact {
 }
 
 .site-branding {
-  display: inline-block;
   width: 100%;
   background-color: $blue;
+  display: flex;
+  justify-content: center;
 
   a {
+    max-width: 900px;
     display: flex;
     justify-content: center;
-    padding: 5rem;
-    flex-direction: column;
-  }
-
-  &.desktop svg.logo {
-    transition: all ease-in-out 0.5s;
-
-    &:hover {
-      transform: translateY(-1em);
-    }
+    align-items: center;
+    padding: 1rem 2rem;
   }
 
   svg.logo {
     fill: $white;
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
     margin: 0 auto;
+    margin-right: 2rem;
+  }
+
+  .site-header-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
   h1.site-title {
@@ -110,7 +111,6 @@ body.contact .nav-contact {
     letter-spacing: -2px;
     color: $white;
     text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
-    text-align: center;
   }
 
   h2.site-description {
@@ -121,7 +121,6 @@ body.contact .nav-contact {
     letter-spacing: 4px;
     opacity: 0.75;
     margin-top: 0.75rem;
-    text-align: center;
   }
 }
 
@@ -155,6 +154,10 @@ body.contact .nav-contact {
     img {
       width: 100%;
       border-radius: 0.5rem;
+    }
+
+    &:first-child {
+      margin-top: 0;
     }
   }
 
@@ -201,16 +204,12 @@ body {
     a {
       color: $light-text;
       font-weight: bold;
-      display: block;
     }
   }
 }
 
-.address {
-  p,
-  a {
-    margin: 0.25rem 0;
-  }
+.address p {
+  margin: 0.25rem 0;
 }
 
 .divider {
@@ -249,12 +248,6 @@ a:hover {
     display: flex;
     justify-content: space-between;
     max-width: 70%;
-  }
-}
-
-@include media('width>=small') {
-  .footer-info {
-    margin-right: 6rem;
   }
 }
 
@@ -332,7 +325,7 @@ a:hover {
 }
 
 .copyright {
-  max-width: 400px;
+  max-width: 250px;
 }
 
 .paypal input[type='image'] {
@@ -455,4 +448,9 @@ a:hover {
       color: $dark-blue !important;
     }
   }
+}
+
+.some-statement {
+  margin-top: 0.5rem;
+  opacity: 0.5;
 }
