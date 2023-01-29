@@ -561,7 +561,7 @@ body.contact .nav-contact a:before {
   border-radius: 0.5rem;
 }
 .content-wrapper .content-area > *:first-child {
-  margin-top: 0;
+  margin-top: 0.25rem;
 }
 .content-wrapper .sidebar {
   padding: 2rem 0;
@@ -724,7 +724,7 @@ a:hover {
 }
 
 @media (max-width: 600px) {
-  .mobile {
+  .mobile .branding-container {
     display: inline-block;
     text-align: center;
   }
