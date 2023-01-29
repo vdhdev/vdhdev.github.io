@@ -15,6 +15,7 @@ $breakpoints: (
 // colors
 $blue: #569bb4;
 $dark-blue: #315678;
+$coral: #f8c379;
 $white: #f8f8f9;
 $dark-text: #444854;
 $light-text: #444444;
@@ -24,6 +25,9 @@ $dark-gray: #d5dee0;
 a {
   color: $blue;
   text-decoration: none;
+  &:hover {
+    text-decoration: underline solid $coral 2px;
+  }
 }
 
 // Desktop navbar
@@ -49,6 +53,10 @@ nav.main-nav {
     box-sizing: border-box;
     display: inline-block;
     position: relative;
+
+    &:hover {
+      text-decoration: none;
+    }
   }
 
   a:hover {
@@ -80,7 +88,18 @@ body.contact .nav-contact {
   width: 100%;
   background-color: $blue;
   display: flex;
-  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  .slogan {
+    background: $coral;
+    color: $dark-text;
+    width: 100%;
+    text-align: center;
+    h3 {
+      margin: 10px 0;
+    }
+  }
 
   a {
     max-width: 900px;
@@ -88,6 +107,9 @@ body.contact .nav-contact {
     justify-content: center;
     align-items: center;
     padding: 1rem 2rem;
+    &:hover {
+      text-decoration: none;
+    }
   }
 
   svg.logo {
@@ -156,8 +178,8 @@ body.contact .nav-contact {
       border-radius: 0.5rem;
     }
 
-    &:first-child {
-      margin-top: 0;
+    & > *:first-child {
+      margin-top: 0.25rem;
     }
   }
 
@@ -186,6 +208,8 @@ body {
 }
 
 .footer {
+  border-top: 5px solid $coral;
+
   .footer-wrapper {
     display: flex;
     justify-content: space-between;
@@ -346,7 +370,7 @@ a:hover {
 }
 
 @include media('width<=small') {
-  .mobile {
+  .mobile .branding-container {
     display: inline-block;
     text-align: center;
   }
@@ -453,4 +477,9 @@ a:hover {
 .some-statement {
   margin-top: 0.5rem;
   opacity: 0.5;
+}
+
+h3 p {
+  font-family: 'Open Sans';
+  display: inline;
 }
