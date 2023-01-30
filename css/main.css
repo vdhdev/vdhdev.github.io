@@ -823,3 +823,8 @@ body.contact .nav-contact a {
   margin-top: 0.5rem;
   opacity: 0.5;
 }
+
+h3 p {
+  font-family: "Open Sans";
+  display: inline;
+}
