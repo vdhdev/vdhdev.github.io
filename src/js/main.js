@@ -1,7 +1,6 @@
 // Function for triggering hamburger menu animation
 function burgerClick(x) {
   x.classList.toggle('change');
-  console.log(x.classList, x.classList.contains('change'));
   if (x.classList.contains('change')) {
     disableScroll();
   } else {

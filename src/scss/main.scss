@@ -44,6 +44,19 @@ nav.main-nav {
       display: block;
       font-size: 20px;
     }
+    li:last-child {
+      margin-left: auto;
+      border-left: 2px solid $blue;
+      border-right: 2px solid $blue;
+      a {
+        i {
+          font-size: 18px;
+        }
+        display: flex;
+        gap: 6px;
+        align-items: center;
+      }
+    }
   }
 
   a {
@@ -221,6 +234,8 @@ body {
   padding: 3rem 2rem;
 
   .footer-info {
+    display: flex;
+    flex-direction: column;
     p {
       color: $light-text;
     }
@@ -232,8 +247,11 @@ body {
   }
 }
 
-.address p {
-  margin: 0.25rem 0;
+.address {
+  p,
+  a {
+    margin: 0.25rem 0;
+  }
 }
 
 .divider {
@@ -381,6 +399,25 @@ a:hover {
 
   .content-area {
     padding: 0 !important;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+
+  .mobile-nav .donate {
+    float: left;
+    margin: 2rem;
+    z-index: 2;
+    position: relative;
+    list-style: none;
+    color: $white;
+    display: flex;
+    gap: 6px;
+    align-items: center;
+    border: 2px solid $white;
+    border-radius: 4px;
+    padding: 8px;
   }
 
   .burger .container {

@@ -1,12 +1,15 @@
 <header class="header">
   <!-- Mobile nav -->
-  <div class="burger" onclick="burgerClick(this)">
-    <div class="container">
-      <div class="bar1"></div>
-      <div class="bar2"></div>
-      <div class="bar3"></div>
+  <div class="mobile mobile-nav">
+    <a href="/donate" class="donate"><i class="fa fa-heart"></i>Donate</a>
+    <div class="burger" onclick="burgerClick(this)">
+      <div class="container">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+      {% include "partials/nav.html" %}
     </div>
-    {% include "partials/nav.html" %}
   </div>
 
   <!-- Normal nav -->
