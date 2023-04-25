@@ -63,6 +63,10 @@
   <meta name="theme-color" content="#ffffff" />
 
   <link rel="stylesheet" href="/css/main.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
   <script type="text/javascript" src="js/main.js"></script>
 </head>
 
@@ -70,13 +74,15 @@
   <body class="home">
     <header class="header">
   <!-- Mobile nav -->
-  <div class="burger" onclick="burgerClick(this)">
-    <div class="container">
-      <div class="bar1"></div>
-      <div class="bar2"></div>
-      <div class="bar3"></div>
-    </div>
-    <nav class="main-nav" id="navigation">
+  <div class="mobile mobile-nav">
+    <a href="/donate" class="donate"><i class="fa fa-heart"></i>Donate</a>
+    <div class="burger" onclick="burgerClick(this)">
+      <div class="container">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+      <nav class="main-nav" id="navigation">
   <ul>
     <li class="nav-home">
       <a href="/">Home</a>
@@ -90,15 +96,18 @@
     <li class="nav-forms">
       <a href="/forms">Forms</a>
     </li>
-    <li class="nav-donate">
-      <a href="/donate">Donate</a>
-    </li>
     <li class="nav-services">
       <a href="/services">Services</a>
+    </li>
+
+    <!-- donate must always come last -->
+    <li class="nav-donate">
+      <a href="/donate"><i class="fa fa-heart"></i>Donate</a>
     </li>
   </ul>
 </nav>
 
+    </div>
   </div>
 
   <!-- Normal nav -->
@@ -116,11 +125,13 @@
     <li class="nav-forms">
       <a href="/forms">Forms</a>
     </li>
-    <li class="nav-donate">
-      <a href="/donate">Donate</a>
-    </li>
     <li class="nav-services">
       <a href="/services">Services</a>
+    </li>
+
+    <!-- donate must always come last -->
+    <li class="nav-donate">
+      <a href="/donate"><i class="fa fa-heart"></i>Donate</a>
     </li>
   </ul>
 </nav>

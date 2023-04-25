@@ -444,6 +444,19 @@ nav.main-nav ul li {
   display: block;
   font-size: 20px;
 }
+nav.main-nav ul li:last-child {
+  margin-left: auto;
+  border-left: 2px solid #569bb4;
+  border-right: 2px solid #569bb4;
+}
+nav.main-nav ul li:last-child a {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+nav.main-nav ul li:last-child a i {
+  font-size: 18px;
+}
 nav.main-nav a {
   padding: 1.25rem 1.5rem;
   transition: all ease-in-out 0.238s;
@@ -593,6 +606,10 @@ body {
   max-width: 1140px;
   margin: auto;
 }
+.footer .footer-info {
+  display: flex;
+  flex-direction: column;
+}
 .footer .footer-info p {
   color: #444444;
 }
@@ -601,7 +618,8 @@ body {
   font-weight: bold;
 }
 
-.address p {
+.address p,
+.address a {
   margin: 0.25rem 0;
 }
 
@@ -735,6 +753,25 @@ a:hover {
 
   .content-area {
     padding: 0 !important;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+
+  .mobile-nav .donate {
+    float: left;
+    margin: 2rem;
+    z-index: 2;
+    position: relative;
+    list-style: none;
+    color: #f8f8f9;
+    display: flex;
+    gap: 6px;
+    align-items: center;
+    border: 2px solid #f8f8f9;
+    border-radius: 4px;
+    padding: 8px;
   }
 
   .burger .container {
