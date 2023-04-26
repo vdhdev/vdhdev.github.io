@@ -762,7 +762,7 @@ a:hover {
   .mobile-nav .donate {
     float: left;
     margin: 2rem;
-    z-index: 2;
+    z-index: 1;
     position: relative;
     list-style: none;
     color: #f8f8f9;
