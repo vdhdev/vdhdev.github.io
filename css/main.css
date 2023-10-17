@@ -869,3 +869,7 @@ h3 p {
 #mc_embed_signup .mce_inline_error {
   background: none !important;
 }
+
+#mc_embed_signup form:valid input.button {
+  background-color: #569bb4;
+}
